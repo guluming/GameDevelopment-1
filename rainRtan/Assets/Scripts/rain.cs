@@ -44,5 +44,11 @@ public class rain : MonoBehaviour
         if (collision.gameObject.tag == "ground") {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.tag == "rtan")
+        {
+            GameManager.I.addScore(score);
+            Destroy(gameObject);
+        }
     }
 }
