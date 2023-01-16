@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
     public Text timeText;
     int totalScore;
-    float limit = 5f;
+    float limit = 30f;
 
     public void addScore(int score)
     {
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         totalScore = 0;
-        limit = 5.0f;
+        limit = 30.0f;
     }
 
     // Update is called once per frame
